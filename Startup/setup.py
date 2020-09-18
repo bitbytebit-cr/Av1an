@@ -87,7 +87,7 @@ def startup_check(args: Args):
         sys.exit()
     if sys.platform == 'linux':
         def restore_term():
-            os.system("stty sane")
+            pass
 
         atexit.register(restore_term)
 
